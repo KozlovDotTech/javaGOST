@@ -38,10 +38,40 @@ public class BigInteger {
 
     public BigInteger() {
 
+
+
     }
 
     public BigInteger(long value) {
+        data = new int[MAX_LENGTH];
+        long tempVal = value;
 
+        dataLength = 0;
+        while (value != 0 && dataLength < MAX_LENGTH) {
+            data[dataLength] = (int) (value & 0xFFFFFFFF);
+            value >>>= 32;
+            dataLength++;
+        }
+
+        if(tempVal > 0)         // overflow check for +ve value
+        {
+            if(value != 0 || (data[MAX_LENGTH-1] & 0x80000000) != 0)
+                throw new ArithmeticException("Positive overflow in constructor.");
+        }
+        else if(tempVal < 0)    // underflow check for -ve value
+        {
+            if(value != -1 || (data[dataLength-1] & 0x80000000) == 0)
+                throw new ArithmeticException("Negative underflow in constructor.");
+        }
+
+        if(dataLength == 0)
+            dataLength = 1;
+
+    }
+
+    public BigInteger(int value)
+    {
+        this((long)value);
     }
 
     public BigInteger abs() {
