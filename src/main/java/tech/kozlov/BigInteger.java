@@ -10,7 +10,7 @@ public class BigInteger {
     private static final int MAX_LENGTH = 70;
 
     // простые числа до 2000 для тестирования
-    public static final int[] primesBelow2000 = {
+    public static final int[] PRIMES_BELOW_2000 = {
             2, 3, 5, 7, 11, 13, 17, 19, 23, 29, 31, 37, 41, 43, 47, 53, 59, 61, 67, 71, 73, 79, 83, 89, 97,
             101, 103, 107, 109, 113, 127, 131, 137, 139, 149, 151, 157, 163, 167, 173, 179, 181, 191, 193, 197, 199,
             211, 223, 227, 229, 233, 239, 241, 251, 257, 263, 269, 271, 277, 281, 283, 293,
@@ -32,6 +32,7 @@ public class BigInteger {
             1801, 1811, 1823, 1831, 1847, 1861, 1867, 1871, 1873, 1877, 1879, 1889,
             1901, 1907, 1913, 1931, 1933, 1949, 1951, 1973, 1979, 1987, 1993, 1997, 1999 };
 
+    private int[] data;
 
     public BigInteger abs() {
 
@@ -194,22 +195,22 @@ public class BigInteger {
     }
 
     // >
-    public static BigInteger operatorMore (BigInteger bi1, BigInteger bi2) {
+    public static boolean operatorMore (BigInteger bi1, BigInteger bi2) {
 
     }
 
     // <
-    public static BigInteger operatorLess (BigInteger bi1, BigInteger bi2) {
+    public static boolean operatorLess (BigInteger bi1, BigInteger bi2) {
 
     }
 
     // >=
-    public static BigInteger operatorMoreEquals (BigInteger bi1, BigInteger bi2) {
+    public static boolean operatorMoreEquals (BigInteger bi1, BigInteger bi2) {
 
     }
 
     // <=
-    public static BigInteger operatorLessEquals (BigInteger bi1, BigInteger bi2) {
+    public static boolean operatorLessEquals (BigInteger bi1, BigInteger bi2) {
 
     }
 
