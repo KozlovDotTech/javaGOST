@@ -34,10 +34,12 @@ public class BigInteger {
 
     private int[] data;
 
+    public int dataLength;
+
     public BigInteger() {
 
     }
-    gi
+
     public BigInteger(long value) {
 
     }
