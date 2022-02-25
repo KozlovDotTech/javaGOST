@@ -179,7 +179,7 @@ public class BigInteger {
 
     }
 
-    public static BigInteger operatorNotEquals (BigInteger bi1, BigInteger bi2) {
+    public static boolean operatorNotEquals (BigInteger bi1, BigInteger bi2) {
 
     }
 
