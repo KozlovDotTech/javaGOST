@@ -34,8 +34,12 @@ public class BigInteger {
 
     private int[] data;
 
+    public BigInteger() {
+
+    }
+    gi
     public BigInteger(long value) {
-        
+
     }
 
     public BigInteger abs() {
