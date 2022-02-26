@@ -225,12 +225,12 @@ public class BigInteger {
 
     }
 
-    public static BigInteger operatorUnaryMinus (BigInteger bi1, BigInteger bi2) {
+    public static BigInteger operatorUnaryMinus (BigInteger bi) {
 
     }
 
     // ~
-    public static BigInteger operatorUnaryNot (BigInteger bi1, BigInteger bi2) {
+    public static BigInteger operatorUnaryNot (BigInteger bi) {
 
     }
 
